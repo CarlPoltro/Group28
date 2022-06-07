@@ -25,7 +25,7 @@ class _LoginState extends State<Login> {
       showInSnackBar('Please enter your credentials.');
     } else {
       form.save();
-      if ( _password == "password" && _email == "Alessandro") {
+      if ( _password == "pippo" && _email == "Alessandro") {
         SharedPreferences prefs = await SharedPreferences.getInstance();
         prefs.setString("username", _email);
         Navigator.pushNamedAndRemoveUntil(
